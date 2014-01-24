@@ -21,7 +21,9 @@
 
   </head>
   <body>
-    <!-- Docs master nav -->
+
+    <!-- Docs master nav 
+    ======================================-->
     <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -31,6 +33,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <img src="images/bomb.png" class="pull-left" style="height:45px; width=45px; padding-top:6px;
+        margin-right:8px; margin-left:3px;" />
       <a href="index.html" class="navbar-brand">Detonation Blog</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
@@ -45,17 +49,59 @@
           <a href="music.htm">My Music</a>
         </li>
       </ul>
+      
     </nav>
   </div>
 </header>
 
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide visible-lg" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/slide-image-2-5.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>My Wedding!</h1>
+              <p>We were married in Brentwood, CA July 13, 2013 at Club Los Meganos Trilogy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/slide-image-3-5.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>My '65 El Camino</h1>
+              <p>Rebuilt from the ground up. Chevy V8 350 with a carburetor,<br /> 4-speed automatic, custom black interior, painted Chevy Hugger Orange. She's a beaut.</p>
+            </div>
+          </div>
+        </div>
+        <!--<div class="item">
+          <img src="images/slide-image-3-5.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>-->
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- Main jumbotron -->
     <div class="jumbotron">
       <div class="container">
         <h1>Welcome to Detonation Blog!</h1>
         <p style="font-size: 12pt">This is version 2.0 of my blog site! It's a place for me to share interesting stuff, my hobbies, and my music. I've been toying with the design of this site for some time now and I've settled on this. The site has been redesigned using Bootstrap instead of jQuery Mobile so you'll find a responsive theme throughout on either mobile or desktop.</p>
-        <!--<p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>-->
       </div>
     </div>
 
