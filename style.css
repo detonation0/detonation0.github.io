@@ -27,3 +27,6 @@ iframe {
 .pull-right {
     margin-top: -6px;
 }
+
+.thumbnail {margin-bottom:6px;}
+.modal-dialog .thumbnail {margin:auto;}
