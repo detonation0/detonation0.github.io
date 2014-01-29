@@ -32,7 +32,9 @@ iframe {
 .modal-dialog .thumbnail {margin:auto;}
 
 .imageClip{
-    width:33.33%;
-    height: auto;
+    /*width:33.33%;
+    height: auto;*/
+    width:  200px;
+    height: 200px;
     overflow:hidden;
 }
