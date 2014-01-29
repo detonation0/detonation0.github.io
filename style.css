@@ -30,3 +30,17 @@ iframe {
 
 .thumbnail {margin-bottom:6px;}
 .modal-dialog .thumbnail {margin:auto;}
+
+.imageClip{
+    width:280px;
+    height:145px;
+    overflow:hidden;
+    vertical-align: middle;
+}
+
+.imageClip{
+    width:33.33%;
+    height: auto;
+    overflow:hidden;
+    margin:auto;
+}
