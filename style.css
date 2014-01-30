@@ -30,3 +30,10 @@ iframe {
 
 .thumbnail {margin-bottom:6px;}
 .modal-dialog .thumbnail {margin:auto;}
+
+#links img{
+    padding:        3px;
+    margin:         3px;
+    border-radius:  10px;
+    border:         1px solid #e2e2e2;
+}
