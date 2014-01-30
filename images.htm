@@ -84,7 +84,7 @@
                         </div>
                         <div class="modal-body next"></div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default pull-left prev">
+                            <button type="button" class="btn btn-success pull-left prev">
                                 <i class="glyphicon glyphicon-chevron-left"></i>
                                 Previous
                             </button>
@@ -155,14 +155,5 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     <script src="assets/js/bootstrap-image-gallery.min.js"></script>
-    <script>
-        $('.thumbnail').click(function(){
-            $('.modal-body').empty();
-            var title = $(this).parent('a').attr("title");
-            $('.modal-title').html(title);
-            $($(this).parents('div').html()).appendTo('.modal-body');
-            $('#myModal').modal({show:true});
-        });
-    </script>
   </body>
 </html>
