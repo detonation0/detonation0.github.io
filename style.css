@@ -4,6 +4,11 @@ body {
 	padding-top:		50px;
 }
 
+code {
+    overflow: auto;
+    word-wrap:  normal;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
