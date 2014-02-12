@@ -65,3 +65,28 @@ iframe {
     top: auto;
     bottom: 100% !important;
 }
+
+footer .btn-primary {
+    margin-top: -6px;  
+}
+
+footer button {
+    margin-right: 4px;
+}
+
+.guitar {
+     -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);   
+}
+
+.jumbotron {
+    background-image: url(images/backgroundblur.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-shadow:1px 1px #000;
+    text-decoration: 
+}
