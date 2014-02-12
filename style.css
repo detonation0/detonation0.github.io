@@ -66,6 +66,10 @@ iframe {
     bottom: 100% !important;
 }
 
+.frontbomb {
+    margin-top: -80px;   
+}
+
 footer .btn-primary {
     margin-top: -6px;  
 }
@@ -88,5 +92,5 @@ footer button {
     background-repeat: no-repeat;
     color: #fff;
     text-shadow:1px 1px #000;
-    text-decoration: 
+    padding-bottom: 70px;
 }
