@@ -43,6 +43,14 @@ iframe {
     border:         1px solid #e2e2e2;
 }
 
+a.frontlink, {
+    text-decoration: none;  
+}
+
+a.frontlink:hover {
+    text-decoration: none;   
+}
+
 .jumbotron .container, .front, .container {
     max-width: 900px; 
     margin-right: auto;
