@@ -70,6 +70,10 @@ iframe {
     margin-top: -80px;   
 }
 
+.navbar-toggle {
+    border: none;   
+}
+
 footer .btn-primary {
     margin-top: -6px;  
 }
