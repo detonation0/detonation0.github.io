@@ -29,7 +29,9 @@ iframe {
 	overflow-x: hidden;
 }
 
-
+ul .pull-right {
+    margin-top: 4px;
+}
 
 .thumbnail {margin-bottom:6px;}
 .modal-dialog .thumbnail {margin:auto;}
