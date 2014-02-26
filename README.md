@@ -1,4 +1,4 @@
-tion Blog <br />
+#Detonation Blog <br />
 ####by Mathew Ruff
 
 <hr>
