@@ -33,6 +33,11 @@ iframe {
 
 ul .pull-right {
     margin-top: 4px;
+    display: inline-block;
+}
+
+div.fa {
+    display: inline-block;   
 }
 
 header li a {
