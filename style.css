@@ -87,6 +87,10 @@ a.frontlink:hover {
     width: 170px;
 }
 
+.drop-up li {
+    display: inline;
+}
+
 .frontbomb {
     margin-top: -80px;   
 }
