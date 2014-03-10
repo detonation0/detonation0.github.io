@@ -96,19 +96,11 @@ a.frontlink:hover {
 }
 
 footer .btn-primary {
-    margin-top: -6px;  
+    margin-top: -6px; 
 }
 
 footer button {
     margin-right: 4px;
-}
-
-.guitar {
-     -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -o-filter: blur(4px);
-  -ms-filter: blur(4px);
-  filter: blur(4px);   
 }
 
 .jumbotron {
@@ -119,4 +111,35 @@ footer button {
     text-shadow:1px 1px #000;
     padding-bottom: 150px;
     font-weight: 400;
+}
+
+.resume-social-box {
+    font-size: 10pt;
+}
+
+.resume-social-box a {
+    color: #000;   
+}
+
+.resume-social-box a:hover {
+    text-decoration: none;
+    color: #007fff;
+}
+
+.resume-social-box .fa {
+    font-size: 12pt;   
+}
+
+.skills .btn {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.skills small {
+    font-size: 8pt;
+}
+
+.row.skills {
+    margin-right: auto;
+    margin-left: auto;
 }
