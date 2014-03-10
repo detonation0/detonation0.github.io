@@ -84,11 +84,17 @@ a.frontlink:hover {
 .drop-up {
     top: auto;
     bottom: 100% !important;
-    width: 170px;
+    width: 160px;
 }
 
 .drop-up li {
     display: inline;
+}
+
+@-moz-document url-prefix() { 
+  .drop-up .fa {
+    margin-top: -17px;
+  }
 }
 
 .frontbomb {
