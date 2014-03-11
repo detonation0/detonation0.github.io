@@ -142,9 +142,16 @@ footer button {
     font-size: 12pt;   
 }
 
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .skills .btn {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin: 3px;
+    padding: 5px;
+    flex-grow: 1;
+    min-width: 25%;
 }
 
 .skills small {
@@ -152,6 +159,6 @@ footer button {
 }
 
 .row.skills {
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
 }
