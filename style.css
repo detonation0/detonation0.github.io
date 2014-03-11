@@ -95,6 +95,10 @@ a.frontlink:hover {
   .drop-up .fa {
     margin-top: -17px;
   }
+    
+  .skills {
+     display: inline-block; 
+  }
 }
 
 .frontbomb {
