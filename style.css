@@ -96,7 +96,7 @@ a.frontlink:hover {
     margin-top: -17px;
   }
     
-  .skills {
+  .skills li {
      display: inline-block; 
   }
 }
