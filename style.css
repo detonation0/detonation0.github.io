@@ -129,6 +129,11 @@ footer button {
     font-weight: 400;
 }
 
+.resume-top {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 .resume-social-box {
     font-size: 10pt;
 }
