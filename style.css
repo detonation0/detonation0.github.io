@@ -110,6 +110,10 @@ a.frontlink:hover {
     max-width: 850px;
 }
 
+.front p {
+     font-size: 12pt;  
+}
+
 .frontbomb {
     margin-top: -45px;   
 }
@@ -122,18 +126,6 @@ footer .btn-primary {
     margin-top: -6px; 
     padding-left: 10px;
     padding-right: 10px;
-}
-
-@media screen and (min-width: 500px) {
-    footer .row {
-        width: 100%;   
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .main {
-        margin-top: 520px !important;   
-    }
 }
 
 footer button {
@@ -154,7 +146,7 @@ footer button {
 }  
 
 .main {
-    margin-top: 450px;
+    margin-top: 400px;
     background: #fff;
 }   
 
@@ -208,4 +200,20 @@ footer button {
 .indent {
     margin-left: 20px; 
     margin-right: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    footer .row {
+        width: 100%;   
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        margin-top: 460px !important;   
+    }
+    
+    .front p {
+        font-size: 11pt !important;   
+    }
 }
