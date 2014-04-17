@@ -4,10 +4,12 @@ h3 {
 
 body {
 	padding-top:		50px;
+    background: #fff;
 }
 
 .mainbody {
     background: #fff;
+    padding-bottom: 0px;
 }
 
 .article_link {
@@ -132,6 +134,7 @@ a.frontlink:hover {
 
 footer {
     background: #fff;
+    margin-bottom: 0px;
 }
 
 footer .btn-primary {
@@ -153,7 +156,7 @@ footer button {
     font-weight: 400;
     position: fixed;
     width: 100%;
-    height: 600px;
+    height: 550px;
     z-index: -1;
 }  
 
