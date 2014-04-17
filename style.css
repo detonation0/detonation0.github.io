@@ -133,7 +133,7 @@ footer button {
 }
 
 .jumbotron {
-    background: url(images/backgroundblur.jpg);
+    background: url(images/guitarblur.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -208,12 +208,18 @@ footer button {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .main {
         margin-top: 460px !important;   
     }
     
     .front p {
         font-size: 11pt !important;   
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main {
+        margin-top: 495px !important;
     }
 }
