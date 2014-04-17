@@ -130,6 +130,10 @@ a.frontlink:hover {
     border: none;   
 }
 
+footer {
+    background: #fff;
+}
+
 footer .btn-primary {
     margin-top: -6px; 
     padding-left: 10px;
