@@ -9,7 +9,6 @@ body {
 
 .mainbody {
     background: #fff;
-    padding-bottom: 0px;
 }
 
 .article_link {
@@ -148,7 +147,7 @@ footer button {
 }
 
 .jumbotron {
-    background: url(images/guitarblur.jpg);
+    background: url(images/guitarblur1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
