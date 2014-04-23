@@ -165,7 +165,7 @@ footer button {
 }  
 
 .main {
-    margin-top: 400px;
+    margin-top: 420px;
     background: #fff;
 }   
 
@@ -221,6 +221,10 @@ footer button {
     margin-right: 20px;
 }
 
+.front_arrow {
+    font-size: 20pt;   
+}
+
 @media screen and (min-width: 500px) {
     footer .row {
         width: 100%;   
@@ -229,7 +233,7 @@ footer button {
 
 @media screen and (max-width: 500px) {
     .main {
-        margin-top: 460px !important;   
+        margin-top: 480px !important;   
     }
     
     .front p {
@@ -239,6 +243,6 @@ footer button {
 
 @media screen and (max-width: 350px) {
     .main {
-        margin-top: 495px !important;
+        margin-top: 515px !important;
     }
 }
