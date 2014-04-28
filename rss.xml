@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-   <title>Detonation Blog</title>
-   <description>Detonation Blod by Mathew Ruff</description>
+   <title>Detonation Blog RSS Feed</title>
+   <description>Detonation Blog</description>
    <link>http://detonation0.github.io/</link>
    <atom:link href="http://detonation0.github.io/rss.xml" 
      rel="self" type="application/rss+xml" />
@@ -12,11 +12,13 @@
      <link>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</link>
      <guid>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</guid>
      <pubDate>Wed, 23 Apr 2014 02:30:00 MST</pubDate>
-     <image>
-        <url>http://detonation0.github.io/articles/images/oneplusmain.jpg</url>
-        <title>OnePlus One</title>
-        <link>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</link>
-     </image>
+     <description>
+        <![CDATA[
+        <img src="http://detonation0.github.io/articles/images/oneplusmain.jpg" />
+        ]]>
+         
+         Last night OnePlus unvieled their new flagship device the OnePlus One. It’s been told it’s going to be the Nexus 5 killer, besting it in specs, price, and security. Get hyped [...]
+     </description>
    </item>
 </channel>
 </rss>
