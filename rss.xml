@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-   <title>Detonation Blog RSS Feed</title>
+   <title>Detonation Blog</title>
    <description>Detonation Blog</description>
    <link>http://detonation0.github.io/</link>
    <atom:link href="http://detonation0.github.io/rss.xml" 
@@ -12,7 +12,7 @@
         <title>Android Automation with IFTTT</title>
         <link>http://detonation0.github.io/articles/android-automation-with-ifttt.htm</link>
         <guid>http://detonation0.github.io/articles/android-automation-with-ifttt.htm</guid>
-        <pubDate>Tues, 29 Apr 2014 13:46:00 MST</pubDate>
+        <pubDate>Tues, 29 Apr 2014</pubDate>
         <description>
             <img src="http://detonation0.github.io/articles/images/iftttBlog1.png" />
             A while back I covered some automation using Zapier and IFTTT. Recently IFTTT (If This Then That) has added Android specific channels to it’s recipe creation page. This opens the door for tons of automated tasks on your Android device. [...]
@@ -23,7 +23,7 @@
         <title>The 2014 Flagship Killer</title>
         <link>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</link>
         <guid>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</guid>
-        <pubDate>Thurs, 10 Apr 2014 14:30:00 MST</pubDate>
+        <pubDate>Thurs, 10 Apr 2014</pubDate>
         <description>
             <img src="http://detonation0.github.io/articles/images/oneplusmain.jpg" />
             Last night OnePlus unvieled their new flagship device the OnePlus One. It’s been told it’s                 going to be the Nexus 5 killer, besting it in specs, price, and security. Get hyped [...]
@@ -34,7 +34,7 @@
         <title>Windows 8.1 - Update 1</title>
         <link>http://detonation0.github.io/articles/windows-8.1-update-1.htm</link>
         <guid>http://detonation0.github.io/articles/windows-8.1-update-1.htm</guid>
-        <pubDate>Wed, 23 Apr 2014 12:04:00 MST</pubDate>
+        <pubDate>Wed, 23 Apr 2014</pubDate>
         <description>
             <img src="http://detonation0.github.io/articles/images/win8logo.jpg" />
             The new Windows 8.1 Update has been out for a few days now bringing a ton of new features. I've gotta say, Microsoft is really starting to listen to it's users. [...]
@@ -47,7 +47,7 @@
         <guid>http://detonation0.github.io/#sayyournumber</guid>
         <pubDate>Thurs, 27 Mar 2014</pubDate>
         <description>
-            
+            This time I'm covering "Say Your Number" by Volbeat off of their 2007 album The Strength / The Sounds / The Songs.
         </description>
     </item>
     
@@ -92,6 +92,71 @@
         <description>
             <img src="http://detonation0.github.io/images/salesforce-logo.png" />
             Communities are branded spaces for your employees, customers, and partners to connect. You can customize and create communities to meet your business needs, then transition seamlessly between them. Communities are a great way to share information and collaborate with people outside your company who are key to your business processes, such as customers or partners [...]
+        </description>
+    </item>
+    
+    <item>
+        <title>Using Google Apps Scripts to auto translate text</title>
+        <link>http://detonation0.github.io/#googleappscript</link>
+        <guid>http://detonation0.github.io/#googleappscript</guid>
+        <pubDate>Fri, 20 Dec 2013</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/images/translate.png" />
+            Tuesday in class we went over the uses of Google App Scripts. I gotta say I didn't think it would be all that great, but after using it I saw how useful it could be. Tim showed us how you can take a script and turn it into a polling service that populates a Google spreadsheet. [...]
+        </description>
+    </item>
+    
+    <item>
+        <title>Video Post - Lift Me Up</title>
+        <link>http://detonation0.github.io/#liftmeup</link>
+        <guid>http://detonation0.github.io/#liftmeup</guid>
+        <pubDate>Sun, 04 Aug 2013</pubDate>
+        <description>
+            My cover of "Lift Me Up" by Five Finger Death Punch.
+        </description>
+    </item>
+    
+    <item>
+        <title>Windows giving you error messages? Check to see if it's corrupt</title>
+        <link>http://detonation0.github.io/#sfc</link>
+        <guid>http://detonation0.github.io/#sfc</guid>
+        <pubDate>Wed, 12 Jun 2013</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/images/cmdsfc.png" />
+            Think your version of Windows is corrupt? Have you been seeing error messages referencing .dll files? Having problems using Windows in general? A quick way to see if your operating system is corrupt or missing important files is to use system file checker to verify the integrity of Windows' files. [...]
+        </description>
+    </item>
+    
+    
+    <item>
+        <title>How to bring back the Windows 7 Start Menu in Windows 8</title>
+        <link>http://detonation0.github.io/#start8</link>
+        <guid>http://detonation0.github.io/#start8</guid>
+        <pubDate>Thurs, 24 Jan 2013</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/images/taskbar_3_full.png" />
+            As requested here are some programs that will allow you to bring back that old start menu if you'd rather use that. The one I think had the best interface is <a href="http://download.cnet.com/Start8/3000-2072_4-75732532.html" target="_blank">Start8</a>, it's free to try for 30 days and is only $4.99 to buy (not bad if you hate the new menu). Start8 matches the look and feel of Windows 8. [...]
+        </description>
+    </item>
+    
+    <item>
+        <title>Want to spy on people through their webcams?</title>
+        <link>http://detonation0.github.io/#trendnet</link>
+        <guid>http://detonation0.github.io/#trendnet</guid>
+        <pubDate>Tues, 22 Jan 2013</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/images/ku-xlarge.png" />
+            Perusing the internet today I came across <a href="http://gizmodo.com/5977915/this-interactive-map-lets-you-spy-on-insecure-webcam-feeds" target="_blank">this article</a>. It talks about this new web app that has come out that allows you to connect to peoples insecure webcams and look through them. I'm currently in the CIS 394 class on Privacy and this was especially intriguing to me. [...]
+        </description>
+    </item>
+    
+    <item>
+        <title>Using IFTTT and Zapier</title>
+        <link>http://detonation0.github.io/#IFTTT</link>
+        <guid>http://detonation0.github.io/#IFTTT</guid>
+        <pubDate>Tues, 15 Jan 2013</pubDate>
+        <description>
+            I've been using Zapier and IFTTT for the last few days and I have to say, I'm really making the web work for me. I've set up a few different automated tasks that help me in my day to day life. One commonly used one is for the weather. If it's going to rain tomorrow, IFTTT sends me a text telling me to "Bring an umbrella!", and lets me know what the forecast is, very useful. [...]
         </description>
     </item>
     
