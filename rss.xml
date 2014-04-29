@@ -7,15 +7,40 @@
    <atom:link href="http://detonation0.github.io/rss.xml" 
      rel="self" type="application/rss+xml" />
 
-   <item>
-     <title>The 2014 Flagship Killer</title>
-     <link>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</link>
-     <guid>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</guid>
-     <pubDate>Wed, 23 Apr 2014 02:30:00 MST</pubDate>
-     <description>
-        <img src="http://detonation0.github.io/articles/images/oneplusmain.jpg" />
-        Last night OnePlus unvieled their new flagship device the OnePlus One. It’s been told it’s going to         be the Nexus 5 killer, besting it in specs, price, and security. Get hyped [...]
-     </description>
+    
+    <item>
+        <title>Android Automation with IFTTT</title>
+        <link>http://detonation0.github.io/articles/android-automation-with-ifttt.htm</link>
+        <guid>http://detonation0.github.io/articles/android-automation-with-ifttt.htm</guid>
+        <pubDate>Tues, 29 Apr 2014 13:46:00 MST</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/articles/images/iftttBlog1.png" />
+            A while back I covered some automation using Zapier and IFTTT. Recently IFTTT (If This Then That) has added Android specific channels to it’s recipe creation page. This opens the door for tons of automated tasks on your Android device. [...]
+        </description>
    </item>
+    
+    <item>
+        <title>The 2014 Flagship Killer</title>
+        <link>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</link>
+        <guid>http://detonation0.github.io/articles/the-2014-flagship-killer.htm</guid>
+        <pubDate>Thurs, 10 Apr 2014 14:30:00 MST</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/articles/images/oneplusmain.jpg" />
+            Last night OnePlus unvieled their new flagship device the OnePlus One. It’s been told it’s                 going to be the Nexus 5 killer, besting it in specs, price, and security. Get hyped [...]
+        </description>
+    </item>
+    
+    <item>
+        <title>Windows 8.1 - Update 1</title>
+        <link>http://detonation0.github.io/articles/windows-8.1-update-1.htm</link>
+        <guid>http://detonation0.github.io/articles/windows-8.1-update-1.htm</guid>
+        <pubDate>Wed, 23 Apr 2014 12:04:00 MST</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/articles/images/win8logo.jpg" />
+            The new Windows 8.1 Update has been out for a few days now bringing a ton of new features. I've gotta say, Microsoft is really starting to listen to it's users. [...]
+        </description>
+   </item>
+    
+    
 </channel>
 </rss>
