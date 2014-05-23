@@ -60,6 +60,10 @@ header li a {
     font-size: 10pt;   
 }
 
+header img {
+    margin-top: 2px;   
+}
+
 .thumbnail {margin-bottom:6px;}
 .modal-dialog .thumbnail {margin:auto;}
 
@@ -132,7 +136,7 @@ a.frontlink:hover {
 }
 
 .frontbomb {
-    margin-top: -40px;   
+    margin-top: -45px;   
 }
 
 .navbar-toggle {
@@ -160,7 +164,7 @@ footer button {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    text-shadow:1px 1px #000;
+    text-shadow:1px 2px #000;
     font-weight: 400;
     position: fixed;
     width: 100%;
