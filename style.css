@@ -15,6 +15,8 @@ img {
     background: #fff;
     position: relative;
     z-index: 1;
+    margin-bottom: -25px;
+    padding-bottom: 20px;
 }
 
 .article_link {
@@ -153,8 +155,8 @@ footer button {
 }
 
 .jumbotron {
-    background: url(images/guitarblur.jpg) no-repeat;
-    background-position: left top;
+    background: url(images/guitarblur.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
