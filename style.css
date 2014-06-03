@@ -253,3 +253,18 @@ footer button {
         margin-top: 515px !important;
     }
 }
+
+.btn.btn-primary {
+    border-radius: 2px;
+    border-bottom: solid 3px #005CB8;   
+}
+
+.btn.btn-success {
+    border-radius: 2px;
+    border-bottom: solid 3px #397F22;
+}   
+
+.btn.btn-default {
+    border-radius: 2px;
+    border-bottom: solid 3px #000;
+}

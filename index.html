@@ -75,9 +75,8 @@
         <div class="container">
             <center class="front">
                 <h1 style="margin-left:4px;">- BOOM -</h1>
-                <p>Hello internet! My name is <a href="about.htm" class="frontlink">Mathew Ruff</a> and this is Detonation Blog. It's a place for me to share my music, hobbies, or any other interesting stuff I find. I've been toying with the design of this site for the past few months and I've settled on this. It's been redesigned using Twitter Bootstrap instead of jQuery Mobile so you'll find a responsive theme throughout on either mobile or desktop.</p>
-                <a href="changes.htm" style="margin-left:4px;" class="btn btn-primary btn-sm"><small>Version 2.3.6</small></a>
-                <br /><br /><span style="margin-left:-3px;" class="glyphicon glyphicon-chevron-down front_arrow"></span>
+                <p>Hello interwebs! My name is <a href="about.htm" class="frontlink">Mat Ruff</a>, and welcome to my site. It’s my little corner of the web where you’ll find my professional information, hobbies, experience, and blog entries. I built this site using Bootstrap 3’s responsive framework and I’m hosting it on Github Pages. My blog has a variety of posts including development, technology, music, and personal interests. So browse through and don’t forget to check out my portfolio, resume, and music pages!</p>
+                <a href="changes.htm" style="margin-left:4px;" class="btn btn-primary btn-sm"><small>Version 2.3.7</small></a>
             </center>
         </div>
     </div>
@@ -120,7 +119,7 @@
         <a href="http://detonation0.github.io/articles/the-2014-flagship-killer.htm#disqus_thread"></a><br />
     <div class="fa fa-user"></div> <a href="//plus.google.com/+MathewRuff?rel=author">By Mathew Ruff</a></p>
         
-        <p>Last night OnePlus unvieled their new flagship device the OnePlus One. It’s been told it’s going to be the Nexus 5 killer, besting it in specs, price, and security. Get hyped [...]</p> <a class="btn btn-success" href="articles/the-2014-flagship-killer.htm" role="button">Read On <span class="glyphicon glyphicon-chevron-right"></span></a></p>   
+        <p>Last night OnePlus unveiled their new flagship device the OnePlus One. It’s been told it’s going to be the Nexus 5 killer, besting it in specs, price, and security. Get hyped [...]</p> <a class="btn btn-success" href="articles/the-2014-flagship-killer.htm" role="button">Read On <span class="glyphicon glyphicon-chevron-right"></span></a></p>   
         </div>
         <div class="col-md-3">
             <img src="articles/images/oneplusmain.jpg" class="img-responsive visible-md visible-lg" width="200px"/>
@@ -366,7 +365,7 @@
       <footer>
        <div class="container">
         <div class="row">
-          <a class="btn btn-primary pull-right" href="#">Top <span class="caret caret-up"></span></a>
+          <a class="btn btn-primary pull-right back-to-top" href="#">Top <span class="caret caret-up"></span></a>
           &copy; <small>MATHEW<b style="color:#666666;">RUFF</b></small> 2014
           <div class="btn-group pull-right">
               <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -404,6 +403,18 @@
     s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
+    </script>
+
+    <script>
+    jQuery(document).ready(function() {
+    var duration = 750;
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+        })
+    });
     </script>
 
   </body>
