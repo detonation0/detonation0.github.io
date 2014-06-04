@@ -136,7 +136,7 @@ a.frontlink:hover {
 }
 
 .frontbomb {
-    margin-top: -45px;   
+    margin-top: -40px;   
 }
 
 .navbar-toggle {
@@ -226,10 +226,6 @@ footer button {
 .indent {
     margin-left: 20px; 
     margin-right: 20px;
-}
-
-.front_arrow {
-    font-size: 20pt;   
 }
 
 @media screen and (min-width: 500px) {
