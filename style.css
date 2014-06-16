@@ -266,6 +266,11 @@ footer button {
     border-bottom: solid 3px #000;
 }
 
+.btn.btn-info {
+    border-radius: 2px;
+    border-bottom: solid 3px #7A4396;
+}
+
 .btn.btn-default:hover {
     background-color: #000;   
 }
