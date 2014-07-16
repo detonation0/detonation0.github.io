@@ -15,7 +15,7 @@
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,13 +70,16 @@
 
     <div class="container">
     <br />
-    <p> &#10095; <a href="index.html">Home</a> &#10095; <a href="page2.htm">Page 2</a></p>
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">Page 2</li>
+    </ol>
 
       <!-- Content Goes Here -->
        <!-- Windows SFC Post
       =============================================== -->
         <p>
-          <a class="article_link" href="http://detonation0.github.io/#sfc">
+          <a class="article_link" href="http://detonation0.github.io/page2.htm#sfc">
             <h2 id="sfc">Windows giving you error messages? Check to see if it's corrupt</h2>
           </a>
           <p><div class="fa fa-clock-o"></div> June 12, 2013 <br />
@@ -94,7 +97,7 @@
         <!-- Start8 Post
       =============================================== -->
         <p>
-          <a class="article_link" href="http://detonation0.github.io/#start8">
+          <a class="article_link" href="http://detonation0.github.io/page2.htm#start8">
             <h2 id="start8">How to bring back the Windows 7 Start Menu in Windows 8</h2>
           </a>
           <p><div class="fa fa-clock-o"></div> January 24, 2013 <br />
@@ -111,7 +114,7 @@
         <!-- Trendnet Spycams
       =============================================== -->
         <p>
-          <a class="article_link" href="http://detonation0.github.io/#trendnet">
+          <a class="article_link" href="http://detonation0.github.io/page2.htm#trendnet">
             <h2 id="trendnet">Want to spy on people through their webcams?</h2>
           </a>
           <p><div class="fa fa-clock-o"></div> January 22, 2013 <br />
@@ -127,7 +130,7 @@
         <!-- Zapier and IFTTT
       =============================================== -->
         <p>
-          <a class="article_link" href="http://detonation0.github.io/#IFTTT">
+          <a class="article_link" href="http://detonation0.github.io/page2.htm#IFTTT">
             <h2 id="IFTTT">Using IFTTT and Zapier</h2>
           </a>
           <p><div class="fa fa-clock-o"></div> January 15, 2013 <br />
@@ -150,12 +153,8 @@
           <li><a>&raquo;</a></li>
         </ul>
     </center>
-      
 
     <hr>
-
-
-
 
     <footer>
        <div class="container">
@@ -186,5 +185,17 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+        var duration = 1500;
+
+        jQuery('.back-to-top').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+            })
+        });
+    </script>
   </body>
 </html>
