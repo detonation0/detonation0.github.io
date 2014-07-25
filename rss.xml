@@ -7,6 +7,16 @@
    <atom:link href="http://detonation0.github.io/rss.xml" 
      rel="self" type="application/rss+xml" />
 
+    <item>
+        <title>Video Post - Washington is Next!</title>
+        <link>http://detonation0.github.io/#washingtonisnext</link>
+        <guid>http://detonation0.github.io/#washingtonisnext</guid>
+        <pubDate>Fri, 25 July 2014</pubDate>
+        <description>
+            Here's a new cover of Washington is Next! by Megadeth off of their album United Abominations. This song is particularly fun to play and I enjoyed learning it! Take a listen and don't forget to put a like on it.
+            <media url="https://www.youtube.com/watch?v=EVjDxzek1SU&list=UUTaG4qh6qNurE4l95N6ql5A" />
+        </description>
+    </item>
     
     <item>
         <title>Android Automation with IFTTT</title>
