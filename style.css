@@ -152,6 +152,11 @@ footer li:hover .fa {
     border: none;   
 }
 
+.navbar-default .navbar-nav>li>a {
+    font-size: 8.5pt !important;
+    text-transform: uppercase !important;
+}
+
 footer {
     background: #fff;
     margin-bottom: 0px;
@@ -167,11 +172,22 @@ footer button {
     margin-right: 4px;
 }
 
+.bg {
+  background: url('images/guitarblur.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 550px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
 .jumbotron {
-    background: url(images/guitarblur.jpg);
+    /*background: url(images/guitarblur.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background: transparent;
     color: #fff;
     text-shadow:1px 1px #000;
     font-weight: 400;
@@ -250,6 +266,10 @@ footer button {
     
     .front p {
         font-size: 11pt !important;   
+    }
+    
+    .mainbody {
+        margin-top: -15px !important;   
     }
 }
 

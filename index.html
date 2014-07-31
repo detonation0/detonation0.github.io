@@ -70,12 +70,13 @@
     <!-- Main jumbotron 
     ==========================-->
     <!--<img src="images/guitar1.jpg" class="visible-xs img-responsive guitar" />-->
+    <div class="bg"></div>
     <div class="jumbotron">
         <div class="container">
             <center class="front">
                 <h1 style="margin-left:4px;">- BOOM -</h1>
-                <p>Hello interwebs! My name is <a href="about.htm" class="frontlink">Mat Ruff</a>, and welcome to my site. It’s my little corner of the web where you’ll find my professional information, hobbies, experience, and blog entries. I built this site using Bootstrap 3’s responsive framework and I’m hosting it on Github Pages. My blog has a variety of posts including development, technology, music, and personal interests. So browse through and don’t forget to check out my portfolio, resume, and music pages!</p>
-                <a href="changes.htm" class="btn btn-primary btn-sm"><small>Version 2.3.7</small></a>
+                <p>Hello interwebs! My name is <a href="about.htm" class="frontlink">Mathew Ruff</a>, and welcome to my site. It’s my little corner of the web where you’ll find my professional information, hobbies, experience, and blog entries. I built this site using Bootstrap 3’s responsive framework and I’m hosting it on Github Pages. My blog has a variety of posts including development, technology, music, and personal interests. So browse through and don’t forget to check out my portfolio, resume, and music pages!</p>
+                <a href="changes.htm" class="btn btn-primary btn-sm"><small>Version 2.4</small></a>
             </center>
         </div>
     </div>
@@ -364,10 +365,16 @@
     </script>
 
     <script>
-        $('.jumbotron').scroll(function(){
-        var x = $(this).scrollTop();
-        $(this).css('background-position','0% '+parseInt(-x/10)+'px');
+        var jumboHeight = $('.jumbotron').outerHeight();
+        function parallax(){
+            var scrolled = $(window).scrollTop();
+            $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+        }
+
+        $(window).scroll(function(e){
+            parallax();
         });
     </script>
+
   </body>
 </html>
