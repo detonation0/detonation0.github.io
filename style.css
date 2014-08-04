@@ -173,13 +173,17 @@ footer button {
 }
 
 .bg {
-  background: url('images/guitarblur.jpg') no-repeat center center;
-  position: fixed;
-  width: 100%;
-  height: 550px; /*same height as jumbotron */
-  top:0;
-  left:0;
-  z-index: -1;
+    background: url('images/guitarblur.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: fixed !important;
+    width: 100%;
+    height: 550px; /*same height as jumbotron */
+    top:0;
+    left:0;
+    z-index: -1;
+    padding:0px;
 }
 
 .jumbotron {
