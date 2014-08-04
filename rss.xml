@@ -6,6 +6,30 @@
    <link>http://detonation0.github.io/</link>
    <atom:link href="http://detonation0.github.io/rss.xml" 
      rel="self" type="application/rss+xml" />
+    
+    <item>
+        <title>CyanogenMod 11.0 M9 Released</title>
+        <link>http://detonation0.github.io/articles/cyanogenmod-11.0-m9-released.htm</link>
+        <guid>http://detonation0.github.io/articles/cyanogenmod-11.0-m9-released.htm</guid>
+        <pubDate>Mon, 4 Aug 2014</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/articles/images/CyanogenModM9_8.4.14/cyanogenmodLogo.jpg" />
+            CyanogenMod is rolling out Snapshot M9 for supported users now. CM11 now supports the Xperia Z2, Xperia Z2 Tablet, and the HTC One M8. CyanogenMod has gotten on a monthly Snapshot schedule lately in lieu of stable releases, which take much longer to finalize and publish [...]
+            <a href="http://detonation0.github.io/articles/cyanogenmod-11.0-m9-released.htm">Read On --></a>
+        </description>
+   </item>
+    
+    <item>
+        <title>A New Push</title>
+        <link>http://detonation0.github.io/articles/a-new-push.htm</link>
+        <guid>http://detonation0.github.io/articles/a-new-push.htm</guid>
+        <pubDate>Mon, 4 Aug 2014</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/articles/images/Pushbullet7.31.14/pbLogo.png" />
+            Pushbullet - I’ve been meaning to write about the usefulness of this app for quite some time, so let’s get it started. Pushbullet is one of those apps that I use constantly. It allows you to push content between your devices quickly and easily [...]
+            <a href="http://detonation0.github.io/articles/a-new-push.htm">Read On --></a>
+        </description>
+   </item>
 
     <item>
         <title>Video Post - Washington is Next!</title>
