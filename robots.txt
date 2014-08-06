@@ -1,0 +1,3 @@
+# https://detonation0.github.io
+
+User-agent: *
