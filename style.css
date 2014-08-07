@@ -64,6 +64,10 @@ header img {
     margin-top: 2px;   
 }
 
+header .fa-rss {
+    position: absolute !important;
+}
+
 .thumbnail {margin-bottom:6px;}
 .modal-dialog .thumbnail {margin:auto;}
 
@@ -165,13 +169,17 @@ footer li:hover .fa {
     border: none;   
 }
 
+.navbar-toggle:hover {
+    background-color: transparent !important;
+}
+
 .navbar-default {
     border-bottom: solid 2px white;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }   
 
 .navbar-default .navbar-nav>li>a {
-    font-size: 8.5pt !important;
+    font-size: 9pt !important;
     text-transform: uppercase !important;
 }
 
@@ -300,6 +308,10 @@ footer button {
     .navbar-header img {
         margin-left: -16px !important;  
         margin-right: -10px !important;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        font-size: 10pt !important;
     }
 }
 
