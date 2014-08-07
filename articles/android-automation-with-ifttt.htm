@@ -210,6 +210,18 @@ A while back I covered some automation using Zapier and IFTTT. Recently IFTTT (I
     </script>
     
     <script>
+        jQuery(document).ready(function() {
+        var duration = 1500;
+
+        jQuery('.back-to-top').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+            })
+        });
+    </script>
+    
+    <script>
         $(function(){
             $(document).on( 'scroll', function(){
                 if ($(window).scrollTop() > 350) {
