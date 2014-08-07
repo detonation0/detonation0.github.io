@@ -32,40 +32,42 @@
 
   <body>
   
-    <!-- Docs master nav -->
-    <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <img src="../images/bomb.png" class="pull-left" style="height:45px; width=45px; padding-top:6px;
-        margin-right:8px; margin-left:3px;" />
-          <a href="../index.html" class="navbar-brand" style="font-size:11pt">DETONATION<b style="color:#999999;">BLOG</b></a>
+    <!-- Docs master nav 
+    ======================================-->
+    <header class="navbar navbar-default navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle pull-left" style="margin-left:7px;" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <img src="../images/bomb.png" class="pull-left" style="height:45px; width:45px; padding-top:6px;
+            margin-right:4px; margin-left:3px;" />
+            <a href="../index.html" class="navbar-brand" style="font-size:11pt">DETONATION<b style="color:#999999;">BLOG</b></a>
+            <a href="http://detonation0.github.io/rss.xml"><span style="color:#fff;font-size:16pt;position:fixed; top:15px;right:15px;" class="fa fa-rss pull-right"></span></a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="../index.html">Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="../about.htm">Site Info</a>
+                    </li>
+                    <li>
+                        <a href="../resume.htm">Resume</a>
+                    </li>
+                    <li>
+                        <a href="../portfolio.htm">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="../music.htm">My Music</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="../index.html">Blog Posts</a>
-            </li>
-            <li>
-              <a href="../about.htm">Site Info</a>
-            </li>
-            <li>
-              <a href="../resume.htm">Resume</a>
-            </li>
-            <li>
-              <a href="../portfolio.htm">Portfolio</a>
-            </li>
-            <li>
-              <a href="../music.htm">My Music</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </header>
 
     <div class="container">
@@ -111,14 +113,12 @@
 
     <hr>
 
-    <footer>
-       <div class="container">
+    <footer style="padding-top:6px;">
+      <div class="container">
         <div class="row">
-          <a class="btn btn-sm btn-primary pull-right back-to-top" href="#">Top <span class="caret caret-up"></span></a>
-          &copy; <small>MATHEW<b style="color:#666666;">RUFF</b></small> 2014
-          <div class="btn-group pull-right">
+          <div class="btn-group">
               <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown">
-                  Social <span class="caret caret-up"></span>
+                  Social &nbsp;<span class="glyphicon glyphicon-chevron-up"></span>
               </button>
               <ul class="dropdown-menu drop-up" role="menu">
                   <li><a href="https://www.facebook.com/mat.ruff" target="_blank">
@@ -129,9 +129,14 @@
                   <li><a href="http://www.youtube.com/user/metalhead8122?feature=mhee" target="_blank">YouTube<div class="fa fa-youtube-play pull-right" style="color:#b31217;width:14px;"></div></a></li>
               </ul>
           </div>
+          <div class="footerCopyright" style="display:block;padding-top:8px;">&copy; <small>MATHEW<b style="color:#666666;">RUFF</b></small> 2014</div>
         </div>
-           </div>
-      </footer>
+           
+        <div class="fab blue hideme back-to-top">
+          <span class="glyphicon glyphicon-chevron-up" style="margin-left:19px;padding-top:16px;font-size:14pt;"></span>
+        </div>
+      </div>
+    </footer>
     </div> <!-- /container -->
     <br />
 
@@ -151,6 +156,19 @@
         ga('create', 'UA-53452419-1', 'auto');
         ga('send', 'pageview');
 
+    </script>
+
+    <script>
+        $(function(){
+            $(document).on( 'scroll', function(){
+                if ($(window).scrollTop() > 350) {
+                    $('.hideme').addClass('show');
+                }
+                else {
+                    $('.hideme').removeClass('show');
+                }
+            });
+        });
     </script>
   </body>
 </html>
