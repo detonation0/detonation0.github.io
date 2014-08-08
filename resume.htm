@@ -32,6 +32,10 @@
         .resume-social-box i {
             vertical-align: middle;   
         }
+        
+        .row.skills small {
+            font-size: 7.5pt !important;   
+        }
     </style>
 
   </head>
@@ -100,15 +104,15 @@
             <hr>
             <center><h4>TECHNICAL SKILLS</h4></center>
                 <div class="row skills">
-                    <button class="btn btn-xs btn-default">HTML<b style="color:#666">5</b> | <small>proficient</small></button>
+                    <button class="btn btn-xs btn-default">HTML<b style="color:#888">5</b> | <small>proficient</small></button>
                     
-                    <button class="btn btn-xs btn-default">CSS<b style="color:#666666">3</b> | <small>proficient</small></button>
+                    <button class="btn btn-xs btn-default">CSS<b style="color:#888">3</b> | <small>proficient</small></button>
                     
-                    <button class="btn btn-xs btn-default">Java<b style="color:#666666">Script</b></button>
+                    <button class="btn btn-xs btn-default">Java<b style="color:#888">Script</b></button>
 
-                    <button class="btn btn-xs btn-default">C<b style="color:#666666">#</b></button>
+                    <button class="btn btn-xs btn-default">C<b style="color:#888">#</b></button>
                     
-                    <button class="btn btn-xs btn-default">jQuery<b style="color:#666666">Mobile</b> | <small>proficient</small></button>
+                    <button class="btn btn-xs btn-default">jQuery<b style="color:#888">Mobile</b> | <small>proficient</small></button>
                     
                     
                     <button class="btn btn-xs btn-default">SQL/SOQL</button>
@@ -119,13 +123,13 @@
                     
                     <button class="btn btn-xs btn-default">Visualforce | <small>proficient</small></button>                    
                     
-                    <button class="btn btn-xs btn-default">Bootstrap<b style="color:#666666">3</b> | <small>proficient</small></button>
+                    <button class="btn btn-xs btn-default">Bootstrap<b style="color:#888">3</b> | <small>proficient</small></button>
                     
-                    <button class="btn btn-xs btn-default">Drupal<b style="color:#666666">7</b></button>
+                    <button class="btn btn-xs btn-default">Drupal<b style="color:#888">7</b></button>
                     
                     <button class="btn btn-xs btn-default">PHP</button>
                     
-                    <button class="btn btn-xs btn-default">PC <b style="color:#666666">Hardware</b> | <small>proficient</small></button>
+                    <button class="btn btn-xs btn-default">PC <b style="color:#888">Hardware</b> | <small>proficient</small></button>
                 </div>
             
             <hr>
@@ -180,11 +184,11 @@
         <br />
             
         <h4>DETONATION[old]<strong>BLOG</strong></h4>
-        <p>The first iteration of this site was built in the cloud on Windows Azure using JavaScript, CSS, HTML, and jQuery Mobile. The assignment was to create a cloud based website of our choosing. It is currently being hosted through Dropbox and Site44. <a class="btn btn-xs btn-success" href="http://detonationblog.site44.com" target="_blank">Old Blog</a></p>
+        <p>The first iteration of this site was built in the cloud on Windows Azure using JavaScript, CSS, HTML, and jQuery Mobile. The assignment was to create a cloud based website of our choosing. It is currently being hosted through Dropbox and Site44. <a class="btn btn-xs btn-success" href="https://detonationblog.site44.com" target="_blank">Old Blog</a></p>
         <br />
             
         <h4>Tech Talk</h4>
-        <p>For a small assignment, I spun up a Drupal website hosted on Pantheon. The site was a simple forum where users could interact and talk about technology. The site allowed for authentication through LinkedIn and had a event calendar. <a class="btn btn-xs btn-success" href="http://bennettscarpetcleaningaz.com" target="_blank">Tech Talk</a></p>
+        <p>For a small assignment, I spun up a Drupal website hosted on Pantheon. The site was a simple forum where users could interact and talk about technology. The site allowed for authentication through LinkedIn and had a event calendar. <a class="btn btn-xs btn-success" href="https://dev-meruff440.gotpantheon.com/" target="_blank">Tech Talk</a></p>
             
         <hr>
         <center><a href="portfolio.htm" class="btn btn-info" style="padding:7px">View My Digital Portfolio <span class="glyphicon glyphicon-chevron-right"></span></a></center>
@@ -264,6 +268,16 @@
                 }
             });
         });
+    </script>
+      
+    <script>
+        $(document).ready(function() {
+            $('div.resume-social-box a').hover(function() { //mouse in
+                $(this).animate({ paddingLeft: '10px' }, 200);
+            }, function() { //mouse out
+                $(this).animate({ paddingLeft: 0 }, 200);
+            });
+        });  
     </script>
   </body>
 </html>

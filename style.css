@@ -68,6 +68,18 @@ header .fa-rss {
     position: absolute !important;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff;
+}
+
+.navbar-brand b {
+    color: #777 !important;   
+}
+
+.page-header {
+    margin: 22px 0 21px !important;   
+}
+
 .thumbnail {margin-bottom:6px;}
 .modal-dialog .thumbnail {margin:auto;}
 
@@ -200,6 +212,7 @@ footer button {
 
 .bg {
     background: url('images/guitarblur.jpg');
+    opacity: .95;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -362,6 +375,10 @@ footer button {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     text-transform: uppercase;
     font-size: 9pt;   
+}
+
+footer .fa.fa-youtube-play {
+    color: #cc181e !important;   
 }
 
 .btn.btn-danger:hover {
