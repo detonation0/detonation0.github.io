@@ -364,6 +364,10 @@ footer button {
     font-size: 9pt;   
 }
 
+.btn.btn-danger:hover {
+    background-color: #B8161B;   
+}
+
 .skills>.btn-default {
      text-transform: capitalize !important;
 }
