@@ -8,6 +8,18 @@
      rel="self" type="application/rss+xml" />
     
     <item>
+        <title>Create A Simple Visualforce Input Page</title>
+        <link>http://detonation0.github.io/articles/create-a-simple-visualforce-input-page.htm</link>
+        <guid>http://detonation0.github.io/articles/create-a-simple-visualforce-input-page.htm</guid>
+        <pubDate>Mon, 11 Aug 2014</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/images/SimpleVFPageArticlePic.png" />
+            We've talked about using Visualforce to write a webpage and display some information to it (<a href="communities-and-force.com.htm">here</a>). But what about creating a form that allows the user to input data into it instead of using the Salesforce back-end? This is where Visualforce gets really exciting [...]
+            <a href="http://detonation0.github.io/articles/create-a-simple-visualforce-input-page.htm">Read On --></a>
+        </description>
+   </item>
+    
+    <item>
         <title>CyanogenMod 11.0 M9 Released</title>
         <link>http://detonation0.github.io/articles/cyanogenmod-11.0-m9-released.htm</link>
         <guid>http://detonation0.github.io/articles/cyanogenmod-11.0-m9-released.htm</guid>

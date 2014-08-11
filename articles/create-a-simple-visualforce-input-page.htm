@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../assets/js/pace.min.js"></script>
+    <link href="../assets/css/pace-theme-minimal.css" rel="stylesheet" />
+
+    <!-- Meta -->
+    <meta name="robots" content="index, follow">
+    
+    <title>Create A Simple Visualforce Input Page | Detonation Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="" /><meta name="keywords" content="visualforce, input, controller, salesforce, apex, pageblock, cases, input field, standard controller">
+
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico">
+      
+    <style>
+        .img-responsive {
+            margin-bottom: 7px; 
+            padding: 0px;
+        }
+    </style>
+
+  </head>
+
+  <body>
+
+
+    <!-- Docs master nav 
+    ======================================-->
+    <header class="navbar navbar-default navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle pull-left" style="margin-left:7px;" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <img src="../images/bomb.png" class="pull-left" style="height:45px; width:45px; padding-top:6px;
+            margin-right:4px; margin-left:3px;" />
+            <a href="../index.html" class="navbar-brand" style="font-size:11pt">DETONATION<b style="color:#999999;">BLOG</b></a>
+            <a href="http://detonation0.github.io/rss.xml"><span style="color:#fff;font-size:16pt;position:fixed; top:15px;right:15px;" class="fa fa-rss pull-right"></span></a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="../about.htm">Site Info</a>
+                    </li>
+                    <li>
+                        <a href="../resume.htm">Resume</a>
+                    </li>
+                    <li>
+                        <a href="../portfolio.htm">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="../music.htm">My Music</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Content Goes Here -->
+        <h1>Create A Simple Visualforce Input Page</h1>
+        <p>Posted on Aug 11th, 2014<br />
+        <a href="//plus.google.com/+MathewRuff?rel=author">By Mathew Ruff</a></p>
+        
+        <h3>Getting Started</h3>
+        <p>We've talked about using Visualforce to write a webpage and display some information to it (<a href="communities-and-force.com.htm">here</a>). But what about creating a form that allows the user to input data into it instead of using the Salesforce back-end? This is where Visualforce gets really exciting. Using Apex we can create custom forms for our objects and use the standard controllers to move the data for us.</p>
+
+        <p>For this example we're going to use the Case object, but you can use any other object's standard controller. The standard controllers come
+pre-packed with the Salesforce objects and they allow us to designate what fields we want to display on the webpage. So instead of Salesforce
+spitting out every field for our user to input data into, we can pick and choose what fields we only need from the user. </p>
+        
+        <h3>The Code</h3>
+        <p>The code for creating these pages start like any other Apex VF page, we'll navigate to /apex/apextest, that will ask us to create a new page called
+apextest. After creating the page we'll go ahead and clear out the starter code and disable the sidebar and header:</p>
+        
+<pre>&lt;apex:page 
+    sidebar="false" 
+    showHeader="false" 
+    controller="Case"&gt;
+                
+&lt;/apex:page&gt;
+</pre>
+
+    <p>Next, we'll start the form. The way Apex forms work is through the tag <code>&lt;apex:inputField/&gt;</code>. This tag must be nested within the tags
+    <code>&lt;apex:pageBlock/&gt;</code> and <code>&lt;apex:pageBlockSection/&gt;</code> for it to work. So let's enter in the page block code:
+    </p>
+        
+<pre>
+&lt;apex:page 
+    sidebar="false" 
+    showHeader="false" 
+    standardController="Case"&gt;
+ 
+    &lt;head&gt;
+        &lt;!-- Header Code Here--&gt;
+    &lt;/head&gt;
+ 
+    &lt;body&gt;
+      &lt;apex:form&gt;
+        &lt;apex:pageBlock&gt;
+          &lt;apex:pageBlockSection&gt;
+ 
+          &lt;/apex:pageBlockSection&gt;
+        &lt;/apex:pageBlock&gt;
+      &lt;/apex:form&gt;
+    &lt;/body&gt;
+&lt;/apex:page&gt;
+</pre>
+        
+        <p>Once that's complete we'll add in the input fields. These tags take tons of different attributes to customize the field (<a href="https://www.salesforce.com/us/developer/docs/pages/Content/pages_compref_inputField.htm" target="_blank">docs</a>). We're only going to use a few.</p>
+        
+        <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i>&nbsp;&nbsp;Make sure you've selected a standard controller, the fields we are going to use require that.</div>
+        
+        <p>So for this example, the only fields we'll have the user input are status, type, subject, and description. They go as follows:</p>
+        
+
+<pre>
+&lt;apex:page 
+    sidebar="false" 
+    showHeader="false" 
+    standardController="Case"&gt;
+ 
+    &lt;head&gt;
+        &lt;!-- Header Code Here--&gt;
+        &lt;style&gt;
+          body {
+            background: #e2e2e2;
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+          }
+    &lt;/style&gt;
+    &lt;/head&gt;
+ 
+    &lt;body&gt;
+      &lt;apex:form&gt;
+        &lt;apex:pageBlock&gt;
+          &lt;apex:pageBlockSection&gt;
+            &lt;apex:inputField value="{!case.status}" required="true"/&gt;
+            &lt;apex:inputField value="{!case.type}" required="true"/&gt;
+            &lt;apex:inputField value="{!case.subject}" label="What problem are you having?" required="true" /&gt;
+            &lt;apex:inputField value="{!case.description}" label="Description of problem" required="true" /&gt;
+          &lt;/apex:pageBlockSection&gt;
+        &lt;/apex:pageBlock&gt;
+      &lt;/apex:form&gt;
+    &lt;/body&gt;
+&lt;/apex:page&gt;
+</pre>
+        
+        <p>Your page now looks like this:</p>
+        
+        <img class="img-responsive" src="../articles/images/SimpleVFInputPage/VFInputPageExample.png"/>
+        
+        <p>As you can see we utilized the label, required, and columns attributes to display on the page. We used the syntax for object fields (much like in Java) to show the value of the input field.</p> 
+
+        <p>Next we'll need a way for the user to save their data. We need to add command buttons. Your form should now have the following code added to it:</p>
+        
+<pre>
+&lt;apex:form&gt;
+  &lt;apex:pageBlock&gt;
+    &lt;apex:pageBlockSection&gt;
+      &lt;apex:inputField value="{!case.status}" required="true"/&gt;
+      &lt;apex:inputField value="{!case.type}" required="true"/&gt;
+      &lt;apex:inputField value="{!case.subject}" label="What problem are you having?" required="true" /&gt;
+      &lt;apex:inputField value="{!case.description}" label="Description of problem" required="true" /&gt;
+    &lt;/apex:pageBlockSection&gt;
+    &lt;apex:pageBlockButtons&gt;
+      &lt;apex:commandButton action="{!save}" value="Submit"/&gt;
+    &lt;/apex:pageBlockButtons&gt;
+  &lt;/apex:pageBlock&gt;
+&lt;/apex:form&gt;
+</pre>
+        
+        <div class="alert alert-success" role="alert"><i class="fa fa-warning"></i>&nbsp;&nbsp;Note: Because we are using a standard stylesheet, we only have to call the action <code>{!save}</code> from the controller instead of creating a custom controller.</div>
+        
+        <p>The action to save is automatically pulled from the standard stylesheet, so we don't have to code a custom controller to save the form. Once you click save on this code you'll get:</p>
+        
+        <img class="img-responsive" src="images/SimpleVFInputPage/SimpleVFInputPageWithSave.png"/>
+        
+        <p>Now if you enter some information about a new case and click submit, it will create a new case for you! You can now go into the Salesforce Service Console and check your Cases tab. </p>
+    
+
+      <p>
+        <br />
+        <!-- AddToAny BEGIN -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_google_plus"></a>
+        <a class="a2a_button_evernote"></a>
+        <a class="a2a_button_linkedin"></a>
+        </div>
+        <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+        <!-- AddToAny END -->
+      </p>
+    
+    
+    <hr>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'detonation0'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    <hr>
+
+
+
+
+    <footer style="padding-top:6px;">
+      <div class="container">
+        <div class="row">
+          <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown">
+                  Social &nbsp;<span class="glyphicon glyphicon-chevron-up"></span>
+              </button>
+              <ul class="dropdown-menu drop-up" role="menu">
+                  <li><a href="https://www.facebook.com/mat.ruff" target="_blank">
+                      Facebook<div class="fa fa-facebook-square pull-right" style="color:#49639e"></div></a></li>
+                  <li><a href="https://plus.google.com/118219240898003217231/posts" target="_blank">Google+<div class="fa fa-google-plus-square pull-right" style="color:#dd4b39"></div></a></li>
+                  <li><a href="https://twitter.com/detonation0" target="_blank">Twitter<div class="fa fa-twitter-square pull-right" style="color:#55acee"></div></a></li>
+                  <li><a href="http://www.linkedin.com/pub/mathew-ruff/63/27b/a1a/" target="_blank">LinkedIn<div class="fa fa-linkedin-square pull-right" style="color:#4875B4"></div></a></li>
+                  <li><a href="http://www.youtube.com/user/metalhead8122?feature=mhee" target="_blank">YouTube<div class="fa fa-youtube-play pull-right" style="color:#b31217;width:14px;"></div></a></li>
+              </ul>
+          </div>
+          <div class="footerCopyright" style="display:block;padding-top:8px;">&copy; <small>MATHEW<b style="color:#666666;">RUFF</b></small> 2014</div>
+        </div>
+           
+        <div class="fab blue hideme back-to-top">
+          <span class="glyphicon glyphicon-chevron-up" style="margin-left:19px;padding-top:16px;font-size:14pt;"></span>
+        </div>
+      </div>
+    </footer>
+    </div> <!-- /container -->
+    <br />
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    
+    <!-- Autohide Navbar -->
+    <script src="../assets/js/jquery.bootstrap-autohidingnavbar.js"></script>
+    <script>$(".navbar-fixed-top").autoHidingNavbar();</script>
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-53452419-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    <script>
+        jQuery(document).ready(function() {
+        var duration = 1500;
+
+        jQuery('.back-to-top').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+            })
+        });
+    </script>
+    
+    <script>
+        $(function(){
+            $(document).on( 'scroll', function(){
+                if ($(window).scrollTop() > 350) {
+                    $('.hideme').addClass('show');
+                }
+                else {
+                    $('.hideme').removeClass('show');
+                }
+            });
+        });
+    </script>
+  </body>
+</html>
