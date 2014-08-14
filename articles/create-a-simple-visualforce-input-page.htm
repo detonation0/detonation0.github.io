@@ -15,6 +15,8 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/prettify.css" rel="stylesheet">
+    <script src="../assets/prettify.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,6 +33,8 @@
             margin-bottom: 7px; 
             padding: 0px;
         }
+        
+        .prettyprint ol.linenums > li { list-style-type: decimal; }
     </style>
 
   </head>
@@ -93,7 +97,7 @@ spitting out every field for our user to input data into, we can pick and choose
         <p>The code for creating these pages start like any other Apex VF page, we'll navigate to /apex/apextest, that will ask us to create a new page called
 apextest. After creating the page we'll go ahead and clear out the starter code and disable the sidebar and header:</p>
         
-<pre>&lt;apex:page 
+<pre class="prettyprint linenums">&lt;apex:page 
     sidebar="false" 
     showHeader="false" 
     controller="Case"&gt;
@@ -105,7 +109,7 @@ apextest. After creating the page we'll go ahead and clear out the starter code 
     <code>&lt;apex:pageBlock/&gt;</code> and <code>&lt;apex:pageBlockSection/&gt;</code> for it to work. So let's enter in the page block code:
     </p>
         
-<pre>
+<pre class="prettyprint linenums">
 &lt;apex:page 
     sidebar="false" 
     showHeader="false" 
@@ -134,7 +138,7 @@ apextest. After creating the page we'll go ahead and clear out the starter code 
         <p>So for this example, the only fields we'll have the user input are status, type, subject, and description. They go as follows:</p>
         
 
-<pre>
+<pre class="prettyprint linenums">
 &lt;apex:page 
     sidebar="false" 
     showHeader="false" 
@@ -175,7 +179,7 @@ apextest. After creating the page we'll go ahead and clear out the starter code 
 
         <p>Next we'll need a way for the user to save their data. We need to add command buttons. Your form should now have the following code added to it:</p>
         
-<pre>
+<pre class="prettyprint linenums">
 &lt;apex:form&gt;
   &lt;apex:pageBlock&gt;
     &lt;apex:pageBlockSection&gt;
@@ -191,7 +195,7 @@ apextest. After creating the page we'll go ahead and clear out the starter code 
 &lt;/apex:form&gt;
 </pre>
         
-        <div class="alert alert-success" role="alert"><i class="fa fa-warning"></i>&nbsp;&nbsp;Note: Because we are using a standard stylesheet, we only have to call the action <code>{!save}</code> from the controller instead of creating a custom controller.</div>
+        <div class="alert alert-success" role="alert"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Note: Because we are using a standard stylesheet, we only have to call the action <code>{!save}</code> from the controller instead of creating a custom controller.</div>
         
         <p>The action to save is automatically pulled from the standard stylesheet, so we don't have to code a custom controller to save the form. Once you click save on this code you'll get:</p>
         
@@ -309,6 +313,14 @@ apextest. After creating the page we'll go ahead and clear out the starter code 
                 }
             });
         });
+    </script>
+    
+    <script>
+      !function ($) {
+        $(function(){
+          window.prettyPrint && prettyPrint()
+        })
+      }(window.jQuery)
     </script>
   </body>
 </html>
