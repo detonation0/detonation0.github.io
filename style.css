@@ -76,6 +76,10 @@ header .fa-rss {
     color: #777 !important;   
 }
 
+.navbar-header>a>b {
+    font-size:11.3pt;
+}
+
 .page-header {
     margin: 22px 0 21px !important;   
 }
