@@ -7,9 +7,9 @@
     <!-- Meta -->
     <meta name="robots" content="index, follow">
     
-    <title>A Day Using Salesforce Communities | Detonation Blog</title>
+    <title>Salesforce Project Update | Detonation Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="" /><meta name="keywords" content="">
+    <meta name="description" content="" /><meta name="keywords" content="salesforce, asu, arizona state university, visualforce, apex, knowledge base, service, case, mathew ruff, ruff, detonation blog, ,">
 
     <!-- Bootstrap -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -72,9 +72,31 @@
     <div class="container">
 
       <!-- Content Goes Here -->
-      <h1></h1>
-      <p>Posted on April 23, 2014<br />
-      <a href="//plus.google.com/+MathewRuff?rel=author">By Mathew Ruff</a></p> 
+      <h1>Salesforce Project Update</h1>
+      <p>Posted on September 1, 2014<br />
+      <a href="//plus.google.com/+MathewRuff?rel=author">By Mathew Ruff</a></p>
+        
+    <a href="../articles/images/SalesforceProjectUpdate_9.1.14/serviceCenterHomepage.png" target="_blank"><img src="../articles/images/SalesforceProjectUpdate_9.1.14/serviceCenterHomepage.png" alt="Service Center Home Page" class="img-responsive center" style="width:600px;max-width:100%;"/></a>
+        
+    <p>I've been working hard on the ASU Service Center recently and I wanted to take a moment and write about some of the updated we've added. The original scope of the project was to build a site in Visualforce that would allow students to interact with the ASU Knowledge Base and view their open and closed cases. Since the project went live back in July, we’ve made a lot of changes to it.</p>
+        
+    <p>The majority of changes I’ve worked on were mobile responsive based. I wanted to make sure that this site was completely mobile friendly and looked and acted the same on whatever device you used. This was specifically difficult for the iPhone 5. Because of the phones small screen size, an extra set of media queries had to go into my .css files in order to compensate for it. Using Bootstrap 3 by itself was a major upgrade to the layout of the site. The framework accounted for the majority of devices out there and all I had to do was add the queries in for the iPhone. Spending my time working on the .css paid off, I’m now getting some really great styles on mobile devices and I’m really happy with the overall look and feel of the site.</p>
+        
+    <div class="row">
+        <div class="col-sm-4"><a href="../articles/images/SalesforceProjectUpdate_9.1.14/iOS%20Simulator%20Screen%20shot%20Aug%2025,%202014,%2011.11.44%20AM_iphone5c_red_portrait.png" target="_blank"><img src="../articles/images/SalesforceProjectUpdate_9.1.14/iOS%20Simulator%20Screen%20shot%20Aug%2025,%202014,%2011.11.44%20AM_iphone5c_red_portrait.png" alt="iOS Red Image" class="img-responsive"/></a></div>
+        <div class="col-sm-4"><a href="../articles/images/SalesforceProjectUpdate_9.1.14/iOS%20Simulator%20Screen%20shot%20Aug%2025,%202014,%2011.48.15%20AM_iphone5c_blue_portrait.png" target="_blank"><img src="../articles/images/SalesforceProjectUpdate_9.1.14/iOS%20Simulator%20Screen%20shot%20Aug%2025,%202014,%2011.48.15%20AM_iphone5c_blue_portrait.png" alt="iOS Blue Image" class="img-responsive"/></a></div>
+        <div class="col-sm-4"><a href="../articles/images/SalesforceProjectUpdate_9.1.14/iOS%20Simulator%20Screen%20shot%20Aug%2025,%202014,%2011.50.23%20AM_iphone5c_yellow_portrait.png" target="_blank"><img src="../articles/images/SalesforceProjectUpdate_9.1.14/iOS%20Simulator%20Screen%20shot%20Aug%2025,%202014,%2011.50.23%20AM_iphone5c_yellow_portrait.png" alt="iOS Yellow Image" class="img-responsive"/></a></div>
+    </div>
+        
+    <p>We’ve also added the ability for students to view the email conversations they’ve had back and forth with the service agent right into the Service Center. I’ve accomplished this by querying the EmailMessage object associated with the id of the case they are viewing. Originally we had (in development) input boxes for students to enter comments on the case and interact with the agent directly on the page. Ultimately we decided not to implement this because we didn’t have a way to ping the specific agent that started the case when a student posted a comment. Nor did we have a way of letting the student know if the agent responded on the case page in the Service Center. Because of this, we decided it would be better to just continue utilizing the email messages back and forth and create a place for the student to view them at all times on the Service Center. Now we don’t have to worry about messages getting lost somewhere. Because these email messages can be very long if they have replies, I’ve also used jQuery to shorten the messages to 255 characters and added a ‘Show More’ link to each message. If the student wants to see the complete message, all they have to do is click the link and jQuery will animate the element and show the entire message. They can then click ‘Show Less’ to hide it again. This is very useful when the student is viewing the page on mobile so they don’t have to scroll through tons of vertical messages. (Bacon Ipsum for testing <i class="fa fa-smile-o"></i>)</p>
+        
+    <a href="../articles/images/SalesforceProjectUpdate_9.1.14/emailMessageGif.gif" target="_blank"><img src="../articles/images/SalesforceProjectUpdate_9.1.14/emailMessageGif.gif" class="img-responsive" style="width:600px;max-width:100%;margin-right:auto;margin-left:auto;"/></a>
+        
+    <p>The case details page also now supports viewing of the case’s attached files. The student can also upload a new file to the case at any time. Along with this functionality, the student has the option to upload a file to the case while creating a new case. So for example if the student is having a technical problem, they can upload a screenshot of the problem while they are creating a case explaining the issue. This functionality is hinged on an <apex:input/> tag and an Apex INSERT into the CaseAttachment object assigned to the case.</p>
+        
+    <p>I also found a security issue in Visualforce on the view case page. My understanding of the way cases worked, was students weren’t supposed to see cases that their contact was not assigned to, but this isn’t the case. If a student gives another student their case id and they put it into their URL, then they will be able to see the other student’s case. I was able to fix this issue with an Apex PageReference to the custom error page I built by querying for their contact and checking it against the contact associated with the case. If they are not associated with the current case, then they are redirected to the error page and told to return to the Service Center. I’m happy to report that this is working great in my testing.</p>
+        
+    <p>A lot of changes have happened to the project over the past few months, and we are continuing to analyze the project and make recommendations and changes. We value service here at ASU and will continue to improve and perfect our Salesforce installation. I am proud to be on this team and look forward to our future endeavors.</p>
         
         
     

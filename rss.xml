@@ -7,6 +7,19 @@
    <atom:link href="http://detonation0.github.io/rss.xml" 
      rel="self" type="application/rss+xml" />
     
+    
+    <item>
+        <title>Salesforce Project Update</title>
+        <link>http://detonation0.github.io/articles/salesforce-project-update.htm</link>
+        <guid>http://detonation0.github.io/articles/salesforce-project-update.htm</guid>
+        <pubDate>Mon, 1 Sept 2014</pubDate>
+        <description>
+            <img src="http://detonation0.github.io/articles/images/SalesforceProjectUpdate_9.1.14/serviceCenterHomepage.png" />
+            I've been working hard on the ASU Service Center recently and I wanted to take a moment and write about some of the updated we've added. The original scope of the project was to build a site in Visualforce that would allow students to interact with the ASU Knowledge Base and view their open and closed cases. Since the project went live back in July, we’ve made a lot of changes to it [...]
+            <a href="http://detonation0.github.io/articles/salesforce-project-update.htm">Read On --></a>
+        </description>
+   </item>
+    
     <item>
         <title>Create A Simple Visualforce Input Page</title>
         <link>http://detonation0.github.io/articles/create-a-simple-visualforce-input-page.htm</link>

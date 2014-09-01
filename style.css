@@ -19,6 +19,11 @@ img {
     padding-bottom: 20px;
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .article_link {
     color: #000;   
 }
@@ -94,7 +99,7 @@ header .fa-rss {
     border:         1px solid #e2e2e2;
 }
 
-a.frontlink, {
+a.frontlink {
     text-decoration: none;  
 }
 
@@ -182,7 +187,8 @@ footer li:hover .fa {
 }
 
 .navbar-toggle {
-    border: none;   
+    border: none; 
+    margin-left: 4px !important;
 }
 
 .navbar-toggle:hover {
