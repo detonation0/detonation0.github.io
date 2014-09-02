@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+* {
+    font-family: Roboto, 'sans-serif';
+}
+
 h3 {
     font-size: 22px;   
 }
@@ -450,7 +455,7 @@ footer .fa.fa-youtube-play {
 }
 
 .fab.blue:hover {
-    background-color: #005CB8;   
+    background-color: #007fff;   
 }
 
 .fab:active {
