@@ -342,6 +342,19 @@ footer button {
     }
 }
 
+@media only screen and (max-device-width: 568px) and (orientation: landscape) {
+    .main {
+        margin-top: 330px !important;   
+    }
+    .front p {
+        font-size: 9pt !important; 
+    }
+    
+    .jumbotron {
+        padding: 10px !important;   
+    }
+}
+
 @media screen and (max-width: 767px) {
     .navbar-header img {
         margin-left: -16px !important;  
