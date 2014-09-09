@@ -201,6 +201,7 @@ footer li:hover .fa {
 }
 
 .navbar-default {
+    z-index: 2;
     border-bottom: solid 2px white;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }   
@@ -437,6 +438,7 @@ footer .fa.fa-youtube-play {
 
 .fab {
     position: fixed;
+    z-index: 1;
     bottom: 22px;
     right: 14px;
     display: inline-block;
