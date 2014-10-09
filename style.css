@@ -533,3 +533,7 @@ footer .fa.fa-youtube-play {
     visibility:visible;
     opacity: 1.0;
 }
+
+.fab > i.fa.fa-angle-up {
+    margin-left: 17px !important;   
+}
