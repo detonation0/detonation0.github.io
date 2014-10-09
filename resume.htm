@@ -9,7 +9,7 @@
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,7 +79,7 @@
 
     <div class="container">
       <br />
-        <div class="well">
+        <div class="well resumeWell">
             <div class="container resume-top">
             <div class="row">
                 <div class="col-md-8">
@@ -100,33 +100,34 @@
             </div>
             <hr>
             <center><h4>TECHNICAL SKILLS</h4></center>
-                <div class="row skills">
-                    <button class="btn btn-xs btn-default">HTML<b style="color:#888">5</b> | <small>proficient</small></button>
+                <div class="skills">
+                    <span class="btn btn-xs btn-default">HTML<b style="color:#888">5</b> | <small>proficient</small></span>
                     
-                    <button class="btn btn-xs btn-default">CSS<b style="color:#888">3</b> | <small>proficient</small></button>
+                    <span class="btn btn-xs btn-default">CSS<b style="color:#888">3</b> | <small>proficient</small></span>
                     
-                    <button class="btn btn-xs btn-default">Java<b style="color:#888">Script</b></button>
+                    <span class="btn btn-xs btn-default">Java<b style="color:#888">Script</b></span>
 
-                    <button class="btn btn-xs btn-default">C<b style="color:#888">#</b></button>
+                    <span class="btn btn-xs btn-default">C<b style="color:#888">#</b></span>
                     
-                    <button class="btn btn-xs btn-default">jQuery<b style="color:#888">Mobile</b> | <small>proficient</small></button>
+                    <span class="btn btn-xs btn-default">jQuery<b style="color:#888">Mobile</b> | <small>proficient</small></span>
                     
                     
-                    <button class="btn btn-xs btn-default">SQL/SOQL</button>
+                    <span class="btn btn-xs btn-default">SQL</span>
                     
-                    <button class="btn btn-xs btn-default">Salesforce | <small>proficient</small></button>
+                    <span class="btn btn-xs btn-default">Salesforce | <small>proficient</small></span>
                                         
-                    <button class="btn btn-xs btn-default">Apex | <small>proficient</small></button>
+                    <span class="btn btn-xs btn-default">Apex | <small>proficient</small></span>
                     
-                    <button class="btn btn-xs btn-default">Visualforce | <small>proficient</small></button>                    
+                    <span class="btn btn-xs btn-default">SOQL | <small>proficient</small></span>
                     
-                    <button class="btn btn-xs btn-default">Bootstrap<b style="color:#888">3</b> | <small>proficient</small></button>
+                    <span class="btn btn-xs btn-default">Visualforce | <small>proficient</small></span>                    
+                    <span class="btn btn-xs btn-default">Bootstrap<b style="color:#888">3</b> | <small>proficient</small></span>
                     
-                    <button class="btn btn-xs btn-default">Drupal<b style="color:#888">7</b></button>
+                    <span class="btn btn-xs btn-default">Drupal<b style="color:#888">7</b></span>
                     
-                    <button class="btn btn-xs btn-default">PHP</button>
+                    <span class="btn btn-xs btn-default">PHP</span>
                     
-                    <button class="btn btn-xs btn-default">PC <b style="color:#888">Hardware</b> | <small>proficient</small></button>
+                    <span class="btn btn-xs btn-default">PC <b style="color:#888">Hardware</b> | <small>proficient</small></span>
                 </div>
             
             <hr>
@@ -209,10 +210,10 @@
                   <li><a href="http://www.youtube.com/user/metalhead8122?feature=mhee" target="_blank">YouTube<div class="fa fa-youtube-play pull-right" style="color:#b31217;width:14px;"></div></a></li>
               </ul>
           </div>
-          <div class="footerCopyright" style="display:block;padding-top:8px;">&copy; <small>MATHEW<b style="color:#666666;">RUFF</b></small> 2014</div>
+          <div class="footerCopyright" style="display:block;padding-top:8px;"><i class="fa fa-copyright"></i> <small>MATHEW<b style="color:#666666;">RUFF</b></small> 2014</div>
         </div>
            
-        <div class="fab blue hideme back-to-top">
+        <div class="fab purple hideme back-to-top">
           <span class="glyphicon glyphicon-chevron-up" style="margin-left:19px;padding-top:16px;font-size:14pt;"></span>
         </div>
       </div>
@@ -270,9 +271,9 @@
     <script>
         $(document).ready(function() {
             $('div.resume-social-box a').hover(function() { //mouse in
-                $(this).animate({ paddingLeft: '10px' }, 200);
+                $(this).animate({ paddingLeft: '10px' }, 300);
             }, function() { //mouse out
-                $(this).animate({ paddingLeft: 0 }, 200);
+                $(this).animate({ paddingLeft: 0 }, 100);
             });
         });  
     </script>

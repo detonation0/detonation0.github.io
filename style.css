@@ -3,6 +3,10 @@
     font-family: Roboto, 'sans-serif';
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Roboto, 'sans-serif';
+}
+
 h3 {
     font-size: 22px;   
 }
@@ -476,6 +480,22 @@ footer .fa.fa-youtube-play {
 
 .fab.blue {
     background-color: #007fff;
+}
+
+.fab.purple {
+    background-color: #9954bb;
+}
+
+.fab.red {
+    background-color: #cc181e;
+}
+
+.fab.green {
+    background-color: #3fb618;
+}
+
+.fab.black {
+    background-color: #252525;
 }
 
 .fab.blue:hover {
