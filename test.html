@@ -31,7 +31,7 @@
     <div id="sideMenu">
         <div id="menuHeader">
             <button class="closeMenu"><img src="images/ic_close_white_48dp.png" style="width:35px"/></button>
-            <h3 id="titleName" style="font-weight:100;">Mathew Ruff</h3>
+            <h3 id="titleName" style="font-weight:100;">DETONATION<b>BLOG</b></h3>
         </div>
         <nav>
             <ul>
@@ -435,19 +435,26 @@
     <script>
         $( "#openMenu" ).click(function() {
             //$( "#sideMenu" ).toggle( "slide" );
-            $( "#sideMenu" ).animate({width: 'toggle'});
+            //$( "#sideMenu" ).animate({width: 'toggle'});
+            $( "#sideMenu" ).css("left","0px");
         });
+    </script>
 
+    <script>
         $( ".closeMenu" ).click(function() {
             //$( "#sideMenu" ).toggle( "slide" );
-            $( "#sideMenu" ).animate({width: 'toggle'});
+            //$( "#sideMenu" ).animate({width: 'toggle'});
+            $( "#sideMenu" ).css("left","-300px");
         });
+    </script>
 
+    <script>
         $(document).mouseup(function (e)
         {
             var container = $( "#sideMenu" );
             if (!container.is(e.target) && container.has(e.target).length === 0) {
-                container.hide( "slide" );
+                //container.hide( "slide" );
+                container.css("left","-300px");
             }
         });
     </script>

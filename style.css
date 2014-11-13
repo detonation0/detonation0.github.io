@@ -561,7 +561,8 @@ footer .fa.fa-youtube-play {
 }
 
 #sideMenu {
-    display: none;
+    transition: all 0.5s ease;
+    //display: none;
     background: #fff;
     //border: solid 1px;
     width: 300px;
@@ -569,6 +570,7 @@ footer .fa.fa-youtube-play {
     z-index: 200;
     position: fixed;
     top: 0px;
+    left:-300px;
 }
 
 #menuHeader {
@@ -577,7 +579,7 @@ footer .fa.fa-youtube-play {
     background-size: cover;
     padding: 5px;
     height: 120px;
-    border-bottom: solid 1px;
+    border-bottom: solid 1px #353535;
     margin-bottom: 20px;
 }
 
