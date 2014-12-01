@@ -26,18 +26,45 @@
         <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
+    <div class="overlay"></div>
+    <div id="sideMenu">
+        <div id="menuHeader">
+            <button class="closeMenu"><img src="images/ic_close_white_48dp.png" style="width:35px"/></button>
+            <h3 id="titleName" style="font-weight:100;">MAT'S<br />DETONATION<b>BLOG</b></h3>
+        </div>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="index.html">Blog Posts</a>
+                </li>
+                <li>
+                    <a href="about.htm">Site Info</a>
+                </li>
+                <li>
+                    <a href="resume.htm">Resume</a>
+                </li>
+                <li>
+                    <a href="portfolio.htm">Portfolio</a>
+                </li>
+                <li>
+                    <a href="music.htm">My Music</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-    <!-- Docs master nav 
+    <!-- Docs master nav
     ======================================-->
     <header class="navbar navbar-default navbar-fixed-top" role="banner">
         <div class="container">
             <div class="navbar-header">
-                <button class="navbar-toggle pull-left" style="margin-left:7px;" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <!--<button class="navbar-toggle pull-left" style="margin-left:7px;" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                </button>-->
+            <button id="openMenu" style="color:white;padding-left:10px;" class="openMenu pull-left" style="margin-left:7px;"><img src="images/ic_menu_white_48dp.png" style="width:40px;"/></button>
             <img src="images/bomb.png" class="pull-left" style="height:45px; width=45px; padding-top:6px;
             margin-right:4px; margin-left:3px;" />
             <a href="index.html" class="navbar-brand" style="font-size:11pt">DETONATION<b style="color:#888;">BLOG</b></a>
@@ -63,7 +90,7 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header>   
 
     <!-- Main jumbotron 
     ==========================-->
@@ -75,7 +102,7 @@
                 <h2>Welcome.</h2>
                 <p>Hello interwebs! My name is <a href="about.htm" class="frontlink">Mathew Ruff</a>, and welcome to my site. It’s my little corner of the web where you’ll find my professional information, hobbies, experience, and blog entries. I built this site using Bootstrap 3’s responsive framework and I’m hosting it on Github Pages. My blog has a variety of posts including development, technology, music, personal interests. So browse through and don’t forget to check out my portfolio, resume, and music pages.</p>            
             <center>
-                <a href="changes.htm" class="btn btn-primary btn-sm"><small>Version 2.4.4<span style="text-transform:lowercase;">a</span></small></a>
+                <a href="changes.htm" class="btn btn-primary btn-sm"><small>Version 2.5</small></a>
             </center>
             </div>
         </div>
@@ -354,6 +381,9 @@
     <!-- Autohide Navbar -->
     <script src="assets/js/jquery.bootstrap-autohidingnavbar.js"></script>
     <script>$(".navbar-fixed-top").autoHidingNavbar();</script>
+
+    <!-- Slide-out Nav -->
+    <script src="assets/js/slideOutNav.js"></script>
     
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
