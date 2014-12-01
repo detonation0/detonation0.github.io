@@ -552,12 +552,18 @@ footer .fa.fa-youtube-play {
 }
 
 
-//THIS IS ONLY A TEST. CARRY ON.
+/*THIS IS ONLY A TEST. CARRY ON.*/
 
 
 #topHeader {
     height: 45px;
     background: #3F51B5;
+}
+
+@media screen and (min-width: 767px) {
+    #openMenu {
+        display: none;
+    }
 }
 
 #sideMenu {
@@ -571,11 +577,28 @@ footer .fa.fa-youtube-play {
     position: fixed;
     top: 0px;
     left:-300px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.overlay {
+    background-color: #000;
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0.4;
+    filter: alpha(opacity = 50); /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 199;
 }
 
 #menuHeader {
     //background: url(images/menuBack.png);
-    background: #536DFE;
+    //background: #536DFE;
+    background: #222;
     background-size: cover;
     padding: 5px;
     height: 120px;
@@ -586,7 +609,7 @@ footer .fa.fa-youtube-play {
 #titleName {
     color: #fff;
     position: relative;
-    margin-top: 75px;
+    margin-top: 60px;
     margin-left: 6px;
     white-space: nowrap;
 }
