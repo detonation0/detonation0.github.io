@@ -16,6 +16,10 @@ body {
     background: #fff;
 }
 
+a:hover {
+    text-decoration: none;   
+}
+
 img {
     padding: 5px;
 }
@@ -87,7 +91,7 @@ header .fa-rss {
 }
 
 .navbar-brand b {
-    color: #777 !important;
+    color: #fff !important;
 }
 
 .navbar-header>a>b {
@@ -552,9 +556,9 @@ footer .fa.fa-youtube-play {
 }
 
 
-/*THIS IS ONLY A TEST. CARRY ON.*/
-
-
+/*
+* Slide-out Menu
+*/
 #topHeader {
     height: 45px;
     background: #3F51B5;
@@ -563,6 +567,12 @@ footer .fa.fa-youtube-play {
 @media screen and (min-width: 767px) {
     #openMenu {
         display: none;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    #sideMenu {
+        width: 260px !important;   
     }
 }
 
