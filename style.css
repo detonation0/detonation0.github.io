@@ -663,6 +663,10 @@ footer .fa.fa-youtube-play {
     background-color: #f0f0f0;
 }
 
+.sideActive {
+    background-color: #f0f0f0 !important;   
+}
+
 #sideMenu ul {
     list-style-type: none;
     padding:0;
