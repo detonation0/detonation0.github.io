@@ -29,26 +29,53 @@
   </head>
 
   <body>
+    <div class="overlay"></div>
+    <div id="sideMenu">
+        <div id="menuHeader">
+            <button class="closeMenu"><img src="../images/ic_close_white_48dp.png" style="width:35px"/></button>
+            <h3 id="titleName" style="font-weight:100;">MAT'S<br />DETONATION<b>BLOG</b></h3>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html"><img src="../images/menuIcons/ic_mode_edit_black_36dp.png" width="30px" style="margin-right:10px;" alt="editIcon"/>Blog Posts</a>
+                </li>
+                <li>
+                    <a href="../about.htm"><img src="../images/menuIcons/ic_info_outline_black_36dp.png" width="30px" style="margin-right:10px;" alt="infoIcon"/>Site Info</a>
+                </li>
+                <li>
+                    <a href="../resume.htm"><img src="../images/menuIcons/ic_description_black_36dp.png" width="30px" style="margin-right:10px;" alt="descIcon"/>Resume</a>
+                </li>
+                <li>
+                    <a href="../portfolio.htm"><img src="../images/menuIcons/ic_folder_black_36dp.png" width="30px" style="margin-right:10px;" alt="folderIcon"/>Portfolio</a>
+                </li>
+                <li>
+                    <a href="../music.htm"><img src="../images/menuIcons/ic_queue_music_black_36dp.png" width="30px" style="margin-right:10px;" alt="musicIcon"/>Music</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-    <!-- Docs master nav 
+    <!-- Docs master nav
     ======================================-->
     <header class="navbar navbar-default navbar-fixed-top" role="banner">
         <div class="container">
             <div class="navbar-header">
-                <button class="navbar-toggle pull-left" style="margin-left:7px;" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <!--<button class="navbar-toggle pull-left" style="margin-left:7px;" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-            <img src="../images/bomb.png" class="pull-left" style="height:45px; width:45px; padding-top:6px;
+                </button>-->
+            <button id="openMenu" style="color:white;padding-left:10px;" class="openMenu pull-left" style="margin-left:7px;"><img src="../images/ic_menu_white_48dp.png" style="width:40px;"/></button>
+            <img src="../images/bomb.png" class="pull-left" style="height:45px; width=45px; padding-top:6px;
             margin-right:4px; margin-left:3px;" />
-            <a href="../index.html" class="navbar-brand" style="font-size:11pt">DETONATION<b style="color:#999999;">BLOG</b></a>
-            <a href="http://detonation0.github.io/rss.xml"><span style="color:#fff;font-size:16pt;position:fixed; top:15px;right:15px;" class="fa fa-rss pull-right"></span></a>
+            <a href="../index.html" class="navbar-brand" style="font-size:11pt">DETONATION<b style="color:#888;">BLOG</b></a>
+            <a href="http://detonation0.github.io/rss.xml"><span style="color:#fff;font-size:16pt;position:absolute; top:15px;right:15px;" class="fa fa-rss pull-right"></span></a>
             </div>
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                 <ul class="nav navbar-nav">
-                    <li>
+                    <li class="active">
                         <a href="../index.html">Blog Posts</a>
                     </li>
                     <li>
@@ -178,6 +205,9 @@ The One will be available starting today. OnePlus is also holding a "<a href="ht
     <!-- Autohide Navbar -->
     <script src="../assets/js/jquery.bootstrap-instanthidingnavbar.js"></script>
     <script>$(".navbar-fixed-top").autoHidingNavbar();</script>
+
+    <!-- Slide-out Nav -->
+    <script src="../assets/js/slideOutNav.js"></script>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

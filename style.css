@@ -628,9 +628,10 @@ footer .fa.fa-youtube-play {
     border: none;
     position: relative;
     background: transparent;
-    margin-left: 15px !important;
-    margin-right: 25px;
+    margin-left: 5px !important;
+    margin-right: 15px;
     margin-top: 1.5px;
+    width: 50px;
 }
 
 .closeMenu {
@@ -660,7 +661,11 @@ footer .fa.fa-youtube-play {
 }
 
 #sideMenu li:hover {
-    background-color: #EBEBEB;
+    background-color: #f0f0f0;
+}
+
+#sideMenu a img {
+    margin-right: 25px !important;   
 }
 
 .sideActive {
