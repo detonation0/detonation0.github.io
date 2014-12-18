@@ -340,7 +340,7 @@ footer button {
 
 @media only screen and (max-device-width: 480px) and (orientation: landscape) {
     .main {
-        margin-top: 330px !important;
+        margin-top: 300px !important;
     }
     .front p {
         font-size: 9pt !important;
@@ -353,7 +353,7 @@ footer button {
 
 @media only screen and (max-device-width: 568px) and (orientation: landscape) {
     .main {
-        margin-top: 330px !important;
+        margin-top: 300px !important;
     }
     .front p {
         font-size: 9pt !important;
@@ -388,6 +388,16 @@ footer button {
 
     .jumbotron {
         padding: 8px;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .main {
+        margin-top: 300px !important;
+    }
+    
+    .jumbotron {
+        font-size: 10pt !important;   
     }
 }
 
