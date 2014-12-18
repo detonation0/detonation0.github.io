@@ -11,14 +11,14 @@ $(function(){
 
 $( "#openMenu" ).click(function() {
     $( "#sideMenu" ).css("left","0px");
-    $( "#sideMenu" ).css("overflow","auto");
+    //$( "#sideMenu" ).css("overflow","auto");
     $( "body" ).css("overflow","hidden");
     $( ".overlay" ).show();
 });
 
 $( ".closeMenu" ).click(function() {
     $( "#sideMenu" ).css("left","-300px");
-    $( "#sideMenu" ).css("overflow","hidden");
+    //$( "#sideMenu" ).css("overflow","hidden");
     $( "body" ).css("overflow","auto");
     $( ".overlay" ).hide();
 });
