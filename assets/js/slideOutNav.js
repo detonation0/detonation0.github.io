@@ -29,3 +29,12 @@ $(document).mouseup(function(e) {
         $( ".overlay" ).hide();
     }
 });
+
+$("body").on("touchstart touchmove", function(e){ 
+    var container = $( "#sideMenu" );
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.css("left","-300px");
+        $( "body" ).css("overflow","auto");
+        $( ".overlay" ).hide();
+    }
+});
